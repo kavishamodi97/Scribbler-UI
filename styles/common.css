@@ -28,7 +28,7 @@
     margin: 0;
 }
 
-.blue-buttons{
+.header-buttons{
   background-color: blue;
   color:white;
   font-family:Arial, Helvetica, sans-serif;
@@ -40,6 +40,19 @@
   padding-left:5px;
   font-size: 14px;
   margin: 10px 10px 0px 0px;
+}
+
+.footer-text{
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight:400;
+  text-align: center;
+}
+
+.signup{
+  color: blue;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight:bold;
+  cursor: pointer;
 }
 
  .modal {
@@ -105,7 +118,7 @@ input{
   cursor: pointer;
 }
 
-.signup-btn{
+.modal-btn{
   background-color: limegreen;
   width: 100%;
   height:35px;

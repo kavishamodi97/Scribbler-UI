@@ -1,0 +1,43 @@
+/* Set Css Styles for Header Section:- e.g:ScriBBler Title,Sub Title,Sign Up Button And Sign In Button */
+
+.header{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 10px;
+}
+
+.title-container{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.title{
+    font-family: 'Montez', cursive; 
+    color: blue;
+    font-size: 30px;
+    text-decoration: none;
+    margin: 0;
+}
+
+.sub-title{
+    font-family: 'Ubuntu Mono', monospace;
+    font-size: 10px;
+    color: black;
+    margin: 0;
+}
+
+.blue-buttons{
+  background-color: blue;
+  color:white;
+  font-family:Arial, Helvetica, sans-serif;
+  width: 90px;
+  text-align: center;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-right: 5px;
+  padding-left:5px;
+  font-size: 14px;
+  margin: 10px 10px 0px 0px;
+}

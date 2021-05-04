@@ -40,6 +40,7 @@
   padding-left:5px;
   font-size: 14px;
   margin: 10px 10px 0px 0px;
+  border:0;
 }
 
 .footer-text{
@@ -132,3 +133,4 @@ input{
   text-align: center;
   text-decoration:none;
 }
+

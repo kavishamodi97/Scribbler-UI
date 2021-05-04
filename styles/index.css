@@ -1,58 +1,59 @@
-/* Set Css Styles for Home Page:- e.g:All Posts Button,Create Post Button,Create Post Modal */
+/* Set Css Styles for Home Page:- e.g:All Post Button,Create Post Button,Create Post Modal */
 
-body {
-	background-image: url("../images/background.jpg");
-	background-repeat: no-repeat;
-	background-size: 100%;
+html{
+    height: 100%;
+    width:100%
+  }
+
+body{
+    background-image: url("../images/background.jpg"); 
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+    background-size: 100% cover!important;
+    margin: 0 !important;
+    overflow: hidden;
+    display: block;
+    height: 100%;
 }
 
-.post-btn {
-	background-color: yellow;
+.post-buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+  }
+
+.post-btn{
+  background-color: yellow;
 	color: black;
 	text-align: center;
 	font-family: Arial, Helvetica, sans-serif;
 	margin: 10px;
 	height: 30px;
-	width: 100px;
+	width: 120px;
 	border: 2px solid white;
 	cursor: pointer;
 }
 
-.button-div {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	margin: 250px;
+textarea{
+  margin-top: 10px;
 }
 
-.create-post-modal-content {
-	background-color: #fefefe;
-	margin: auto;
-	padding: 20px;
-	border: 1px solid #888;
-	width: 80%;
-	height: 70%;
-}
-
-.create-btn {
-	margin-top: 10px;
-	background-color: limegreen;
-	font-size: 14px;
-	width: 100px;
-	color: white;
-	padding: 10px;
+#create-post-btn{
 	display: block;
-	margin: auto;
-	align-self: center;
-	font-family: Arial, Helvetica, sans-serif;
-	border: 0;
+    margin: auto;
+    align-items: center;
+    height: 2rem;
+    width: 6rem;
+    margin-top: 25px;
+    font-size: 6px;
+    border: 2px solid none;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-size: 16px;
+    padding: 2px 2px 4px 2px;
 }
 
-textarea {
-	height: 200px;
-	width: 100%;
-	margin-top: 10px;
-	background-color: whitesmoke;
-	font-family: Arial, Helvetica, sans-serif;
-	border: none;
-}

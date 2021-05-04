@@ -1,57 +1,58 @@
-/* Set Css Styles for Home Page*/
-body{
-    background-image: url("../images/background.jpg"); 
-    background-repeat: no-repeat;
-    background-size: 100%;
+/* Set Css Styles for Home Page:- e.g:All Posts Button,Create Post Button,Create Post Modal */
+
+body {
+	background-image: url("../images/background.jpg");
+	background-repeat: no-repeat;
+	background-size: 100%;
 }
 
-.post-btn{
-    background-color: yellow;
-    color: black;
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 10px;
-    height: 30px;
-    width: 100px;
-    border: 2px solid white;
-    cursor: pointer;
+.post-btn {
+	background-color: yellow;
+	color: black;
+	text-align: center;
+	font-family: Arial, Helvetica, sans-serif;
+	margin: 10px;
+	height: 30px;
+	width: 100px;
+	border: 2px solid white;
+	cursor: pointer;
 }
 
-.button-div{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 250px;
+.button-div {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 250px;
 }
 
-.create-post-modal-content{
-  background-color: #fefefe;
-  margin: auto;
-  padding: 20px;
-  border: 1px solid #888;
-  width: 80%;
-  height:70%;
+.create-post-modal-content {
+	background-color: #fefefe;
+	margin: auto;
+	padding: 20px;
+	border: 1px solid #888;
+	width: 80%;
+	height: 70%;
 }
 
-.create-btn{
-  margin-top: 10px;
-  background-color:limegreen;
-  font-size: 14px;
-  width:100px;
-  color: white;
-  padding: 10px;
-  display: block;
-  margin: auto;
-  align-self: center;
-  font-family: Arial, Helvetica, sans-serif;
-  border: 0;
+.create-btn {
+	margin-top: 10px;
+	background-color: limegreen;
+	font-size: 14px;
+	width: 100px;
+	color: white;
+	padding: 10px;
+	display: block;
+	margin: auto;
+	align-self: center;
+	font-family: Arial, Helvetica, sans-serif;
+	border: 0;
 }
 
 textarea {
-      height: 200px;
-      width: 100%;
-      margin-top: 10px;
-      background-color: whitesmoke;
-      font-family: Arial, Helvetica, sans-serif;
-      border: none;
-  }
+	height: 200px;
+	width: 100%;
+	margin-top: 10px;
+	background-color: whitesmoke;
+	font-family: Arial, Helvetica, sans-serif;
+	border: none;
+}

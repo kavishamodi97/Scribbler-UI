@@ -1,4 +1,4 @@
-/* Scripts for Header Section */
+/* Script for Header Section */
 
 function showSignUpModal() {
     document.getElementById('signup-modal').style.display = 'flex';

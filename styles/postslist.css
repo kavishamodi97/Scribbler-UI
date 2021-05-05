@@ -1,13 +1,11 @@
-/* Set Css Styles for Header Section:- e.g:ScriBBler Title,Sub Title,Sign Up Button And Sign In Button */
-body {
-    background-color:#ffeedd;
-}
+/* Set Css Styles for PostList Page:- e.g: Header Section,PostList Cards,Delete Post Modal*/
 
 #container{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    height: 100%;
+    height: 15%;
+    background-color: #ffeedd;
     width: 100%;
   }
 
@@ -122,68 +120,84 @@ form {
   filter: brightness(200%);
 }
 
-.post-cards{
-    background-color: lightgrey;
-    width: 700px;
-    height: 100%;
-    display:flex;
-    flex-direction: row;
-    border-radius: 20px;
-    margin: 40px;
-    box-shadow: grey;
-    flex: 0 1 30%;
+.post-card{
+  background-color: lightgrey;
+  width: 700px;
+  height: 100%;
+  display:flex;
+  flex-direction: row;
+  border: 3px;
+  border-radius: 25px;
+  margin: 40px;
+  box-shadow: grey;
+  flex: 0 1 30%;
 }
 
-.post-cards:hover {
-    box-shadow: 0 0 40px rgba(33,33,33,.2); 
-  }
+.post-card:hover {
+  box-shadow: 0 0 40px rgba(33,33,33,.2); 
+}
 
-.post-author-name{
-    background-color: white;
-    border-radius: 20px 0px 0px 20px;
-    color: darkslategrey;
-    font-weight: bold;
-    font-family: sans-serif;
-    display: flex;
-    align-items: center;
-    width: 25%;
-    text-align: center;
+.post-author{
+  background-color: white;
+  border-radius: 20px 0px 0px 20px;
+  color: darkslategrey;
+  font-weight: bold;
+  font-family: sans-serif;
+  display: flex;
+  align-items: center;
+  width: 30%;
+  text-align: center;
 }
 
 .post-container{
-    display:flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;    
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-color: #ffeedd;
+  justify-content: center;    
 }
 
 .post-title{
-    font-size: larger;
-    font-family: sans-serif;
-    color: grey;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+  font-size: larger;
+  font-family: sans-serif;
+  color: grey;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 p{
-    font-family: sans-serif;
-    font-size: medium;
+  font-family: sans-serif;
+  font-size:12px;
 }
 
-.post-contents{
-    margin: 10px;
+.post-content{
+  margin: 10px;
 }
 
 .icon-class{
-    color: grey;
-    float: right;
-    margin-right: 10px;
-    cursor: pointer;
+  color: grey;
+  float: right;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.yes-btn{
+  background-color:green;
+  color:white;
+  width:60px;
+  height:40px;
+}
+
+.no-btn{
+  background-color: red;
+  color:white;
+  width: 60px;
+  height: 40px;
 }
 
 .post-description {
-    max-width: 700px;
-    height: 53px;
-    overflow: hidden;
+  max-width: 700px;
+  height: 53px;
+  overflow: hidden;
 }

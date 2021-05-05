@@ -1,5 +1,5 @@
 /* Script For Home Page*/
 
-function navigateToBlogListPage() {
-    window.location.href = "html/bloglist.html";
+function navigateToPostListPage() {
+    window.location.href = "html/postslist.html";
 }

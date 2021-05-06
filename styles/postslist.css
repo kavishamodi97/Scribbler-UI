@@ -185,19 +185,33 @@ p{
 .yes-btn{
   background-color:green;
   color:white;
-  width:60px;
+  width:90px;
   height:40px;
+  margin-left: 65px;
+  margin-bottom: 20px;
+  border: none;
+
 }
 
 .no-btn{
   background-color: red;
   color:white;
-  width: 60px;
+  width: 90px;
   height: 40px;
+  margin-right: 65px;
+  margin-bottom: 20px;
+  border: none;
 }
-
 .post-description {
   max-width: 700px;
   height: 53px;
   overflow: hidden;
 }
+
+.post-header{
+   display: flex;
+  justify-content: center;
+  margin-top: 8px;
+  height: 50px;
+}
+

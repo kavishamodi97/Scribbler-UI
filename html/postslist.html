@@ -18,7 +18,7 @@
 
 </head>
 
-<body>
+<body style="background-color: #ffeedd;">
 
     <!-- Include all your code for the header and home page here -->
     <div id="container">
@@ -119,7 +119,7 @@
                     <span>
                         <!-- TODO: Include Font Awesome icon for delete icon here -->
                         <i class="fa fa-trash-o" data-toggle="modal" data-target="#delete-modal" id="1"
-                            onclick="deleteModal(this.id)"></i>
+                            onclick="deleteCardModal(this.id)"></i>
                     </span>
                 </div>
                 <p id="desc-1" class="post-description">Since JavaScript does not have any type-checking, either of
@@ -129,7 +129,7 @@
                     keywords are used for the same purpose, they are different.</p>
                 <span>
                     <!-- TODO: Include Font Awesome icon for horizontal ellipsis icon here -->
-                    <i class="fa fa-ellipsis-h icon-class" id="1" onclick="openPost(this.id)"></i>
+                    <i class="fa fa-ellipsis-h icon-class" id="1" onclick="navigateToPostPage()"></i>
                 </span>
             </div>
         </div>
@@ -146,7 +146,7 @@
                     <span>
                         <!-- TODO: Include Font Awesome icon for delete icon here -->
                         <i class="fa fa-trash-o" data-toggle="modal" data-target="#delete-modal" id="2"
-                            onclick="deleteModal(this.id)"></i>
+                            onclick="deleteCardModal(this.id)"></i>
                     </span>
                 </div>
                 <p id="desc-2" class="post-description">One of the biggest challenges in software development is time.
@@ -156,7 +156,7 @@
                 </p>
                 <span>
                     <!-- TODO: Include Font Awesome icon for horizontal ellipsis icon here -->
-                    <i class="fa fa-ellipsis-h icon-class" id="2" onclick="openPost(this.id)"></i>
+                    <i class="fa fa-ellipsis-h icon-class" id="2" onclick="navigateToPostPage()"></i>
                 </span>
             </div>
         </div>
@@ -173,7 +173,7 @@
                     <span>
                         <!-- TODO: Include Font Awesome icon for delete icon here -->
                         <i class="fa fa-trash-o" id="3" data-toggle="modal" data-target="#delete-modal"
-                            onclick="deleteModal(this.id)"></i>
+                            onclick="deleteCardModal(this.id)"></i>
                     </span>
                 </div>
                 <p id="desc-3" class="post-description">If you're a developer with a Twitter account, you've already
@@ -183,7 +183,7 @@
                     very least, a recognizable name in the industry.</p>
                 <span>
                     <!-- TODO: Include Font Awesome icon for horizontal ellipsis icon here -->
-                    <i class="fa fa-ellipsis-h icon-class" id="3" onclick="openPost(this.id)"></i>
+                    <i class="fa fa-ellipsis-h icon-class" id="3" onclick="navigateToPostPage()"></i>
                 </span>
             </div>
         </div>
@@ -200,7 +200,7 @@
                     <span>
                         <!-- TODO: Include Font Awesome icon for delete icon here -->
                         <i class="fa fa-trash-o" id="4" data-toggle="modal" data-target="#delete-modal"
-                            onclick="deleteModal(this.id)"></i>
+                            onclick="deleteCardModal(this.id)"></i>
                     </span>
                 </div>
                 <p id="desc-4" class="post-description">When code is not describable using words, most people have to do
@@ -210,7 +210,7 @@
                     leads to confusion when discussing the code.</p>
                 <span>
                     <!-- TODO: Include Font Awesome icon for horizontal ellipsis icon here -->
-                    <i class="fa fa-ellipsis-h icon-class" id="4" onclick="openPost(this.id)"></i>
+                    <i class="fa fa-ellipsis-h icon-class" id="4" onclick="navigateToPostPage()"></i>
                 </span>
             </div>
         </div>
@@ -227,7 +227,7 @@
                     <span>
                         <!-- TODO: Include Font Awesome icon for delete icon here -->
                         <i class="fa fa-trash-o" id="5" data-toggle="modal" data-target="#delete-modal"
-                            onclick="deleteModal(this.id)"></i>
+                            onclick="deleteCardModal(this.id)"></i>
                     </span>
                 </div>
                 <p id="desc-5" class="post-description">Node.js treats each JavaScript file as a separate module. For
@@ -236,7 +236,7 @@
                     named xyz.</p>
                 <span>
                     <!-- TODO: Include Font Awesome icon for horizontal ellipsis icon here -->
-                    <i id="5" class="fa fa-ellipsis-h icon-class" id="5" onclick="openPost(this.id)"></i>
+                    <i id="5" class="fa fa-ellipsis-h icon-class" id="5" onclick="navigateToPostPage()"></i>
                 </span>
             </div>
         </div>
@@ -247,25 +247,21 @@
             aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered" role="document">
                 <div class="modal-content">
-                    <div class="modal-header">
-                        <!-- <button type="button" class="close" data-dismiss="modal"></button> -->
+                    <div class="post-header">
                         <span data-dismiss="modal" class="modal-title" style="color: black;font-size: larger;">Are you
-                            sure
-                            you want to delete this post?</span>
+                            sure you
+                            want to delete this post?</span>
                     </div>
                     <form>
-                        <div class="modal-footer" style="display: flex;justify-content:space-between;margin-top:40px;">
+                        <div class="post-footer" style="display: flex;justify-content:space-between;margin-top:40px;">
                             <button data-dismiss="modal" class="yes-btn" type="button"
-                                onclick="deletePost(this.id)">Yes</button>
-                            <button data-dismiss="modal" class="no-btn" type="button"
-                                onclick="closeDeleteModal()">No</button>
+                                onclick="deleteCard(this.id)">Yes</button>
+                            <button data-dismiss="modal" class="no-btn" type="button">No</button>
                         </div>
                     </form>
                 </div>
             </div>
         </div>
-
-
     </div>
     <!-- list of all posts ends here -->
 

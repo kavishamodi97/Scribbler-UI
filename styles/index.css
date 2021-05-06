@@ -1,33 +1,33 @@
 /* Set Css Styles for Home Page:- e.g:All Post Button,Create Post Button,Create Post Modal */
 
-html{
-    height: 100%;
-    width:100%
-  }
-
-body{
-    background-image: url("../images/background.jpg"); 
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: center center;
-    background-size: 100% cover!important;
-    margin: 0 !important;
-    overflow: hidden;
-    display: block;
-    height: 100%;
+html {
+	height: 100%;
+	width: 100%
 }
 
-.post-buttons{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    width: 100%;
-  }
+body {
+	background-image: url("../images/background.jpg");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: center center;
+	background-size: 100% cover!important;
+	margin: 0 !important;
+	overflow: hidden;
+	display: block;
+	height: 100%;
+}
 
-.post-btn{
-  background-color: yellow;
+.post-buttons {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	width: 100%;
+}
+
+.post-btn {
+	background-color: yellow;
 	color: black;
 	text-align: center;
 	font-family: Arial, Helvetica, sans-serif;
@@ -38,22 +38,21 @@ body{
 	cursor: pointer;
 }
 
-textarea{
-  margin-top: 10px;
+textarea {
+	margin-top: 10px;
 }
 
-#create-post-btn{
+#create-post-btn {
 	display: block;
-    margin: auto;
-    align-items: center;
-    height: 2rem;
-    width: 6rem;
-    margin-top: 25px;
-    font-size: 6px;
-    border: 2px solid none;
-    margin-top: 10px;
-    margin-bottom: 5px;
-    font-size: 16px;
-    padding: 2px 2px 4px 2px;
+	margin: auto;
+	align-items: center;
+	height: 2rem;
+	width: 6rem;
+	margin-top: 25px;
+	font-size: 6px;
+	border: 2px solid none;
+	margin-top: 10px;
+	margin-bottom: 5px;
+	font-size: 16px;
+	padding: 2px 2px 4px 2px;
 }
-

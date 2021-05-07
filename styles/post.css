@@ -168,11 +168,56 @@ form {
     background-color: #e60073;
     box-shadow: 0px 5px  12px -4px #e60073;
     cursor: pointer;
-    text-align: center;	
+    text-align: center;
+	font-size: small;	
 }
 
 .like-text{
 font-family: Arial, Helvetica, sans-serif;
 margin-top: 10px;
 font-size: smaller;
+}
+
+.comment-container{
+ margin: 15px 30px 0px 30px;;	
+}
+
+#comment-box{
+	height: 100px;
+    width:70%;
+    background-color: white;
+    border-style: solid;
+    border-width: 1px;
+    display: flex;
+    flex-direction: row;
+	font-family: Arial, Helvetica, sans-serif;	
+}
+
+.comment-btn{
+    color:white;
+    width: 80px;
+    height: 40px;
+    border: none;
+	font-family: Arial, Helvetica, sans-serif;
+    background-color: #e60073;
+    box-shadow: 0px 5px  12px -4px #e60073;
+    cursor: pointer;
+    text-align: center;	
+	margin-top: 20px;	
+	font-size: small;	
+}
+
+.comment-text{
+font-family: Arial, Helvetica, sans-serif;
+margin-top: 10px;
+font-size: smaller;
+font-weight: bold;	
+}
+
+#all-post-comments{
+    display: flex;
+    flex-direction: column-reverse;
+    background-color: lightgrey;
+    width: 70%;
+    height: 100%;
 }

@@ -19,7 +19,19 @@ function deleteCard(postid) {
 }
 
 /* Click On Ellipsis Icon Navigate To Post Page */
-function navigateToPostPage() {
+function navigateToPostPage(id) {
+    var postAuthor = document.getElementById(`post-author-${id}`).textContent;
+    var postTitle = document.getElementById(`title-${id}`).textContent;
+    var postDescription = document.getElementById(`desc-${id}`).textContent;
+    console.log(postAuthor);
+
+    var postObj = {
+        "authorName": postAuthor,
+        "titleName": postTitle,
+        "description": postDescription
+    };
+
+    sessionStorage.setItem("postInfo", JSON.stringify(postObj));
     window.location.href = "post.html";
 }
 

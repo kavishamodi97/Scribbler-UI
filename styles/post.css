@@ -154,3 +154,25 @@ form {
     cursor: pointer;
     text-align: center;
 }
+
+.like-container{
+ margin: 15px 30px 0px 30px;
+}
+
+.like-btn{
+    color:white;
+    width: 80px;
+    height: 40px;
+    border: none;
+	font-family: Arial, Helvetica, sans-serif;
+    background-color: #e60073;
+    box-shadow: 0px 5px  12px -4px #e60073;
+    cursor: pointer;
+    text-align: center;	
+}
+
+.like-text{
+font-family: Arial, Helvetica, sans-serif;
+margin-top: 10px;
+font-size: smaller;
+}

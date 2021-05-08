@@ -3,10 +3,34 @@
 window.onload = function () {
     var sessionObj = sessionStorage.getItem('postInfo');
     var parseObj = JSON.parse(sessionObj);
-    var editButton = `<button type="button" class="edit-btn" id="editPostBtn">Edit <i class="fa fa-pencil-square-o" aria-hidden="true"></i></button>`;
+    var editButton = `<button type="button" class="edit-btn" id="editPostBtn" onclick="editPostContent();">Edit <i class="fa fa-pencil-square-o" aria-hidden="true"></i></button>`;
     document.getElementById('postAuthor').innerHTML = parseObj["authorName"] + editButton;
     document.getElementById('postTitle').innerHTML = parseObj["titleName"];
     document.getElementById('postDescription').innerHTML = parseObj["description"];
+}
+
+function editPostContent() {
+    var sessionObj = sessionStorage.getItem('postInfo');
+    var parseObj = JSON.parse(sessionObj);
+    document.getElementById('postTitle').contentEditable = "true";
+    document.getElementById('postTitle').style.border = "1px solid #d11d53";
+    document.getElementById('postDescription').contentEditable = "true";
+    document.getElementById('postDescription').style.border = "1px solid #d11d53";
+    var postAuthorName = parseObj["authorName"];
+    document.getElementById('postAuthor').innerHTML =
+        `<h4>${postAuthorName}</h4>` + `<button type="button" class="save-btn" id="saveBtn" onclick="savePostContent();"> Save <i class="fa fa-save"></i></button>`;
+}
+
+function savePostContent() {
+    var sessionObj = sessionStorage.getItem('postInfo');
+    var parseObj = JSON.parse(sessionObj);
+    var postAuthorName = parseObj["authorName"];
+    document.getElementById('postAuthor').innerHTML =
+        `<h4>${postAuthorName}</h4>` + `<button type="button" id="edit-btn" class="edit-btn" onclick="editPostContent();">Edit <i class="fa fa-pencil-square-o"></i></button>`;
+    document.getElementById('postTitle').contentEditable = "false";
+    document.getElementById('postDescription').contentEditable = "false";
+    document.getElementById('postDescription').style.border = "none";
+    document.getElementById('postTitle').style.border = "none";
 }
 
 var likeCount = 0;

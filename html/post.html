@@ -111,17 +111,18 @@
     <div id="postDescription">
     </div>
 
-    <div class="like-container">
-        <button id="likeBtn" class="like-btn"><i class="fa fa-thumbs-up"></i> Like </button>
-        <p class="like-text">Be the first one to like this!</p>
+    <div id="like-container">
+        <button id="likeBtn" class="like-btn" onclick="likePost()"><i class="fa fa-thumbs-up"></i> Like </button>
+        <p id="like-text">Be the first one to like this!</p>
     </div>
 
-    <div class="comment-container">
+    <div id="comment-container">
         <textarea id="comment-box" placeholder="Leave a comment..."></textarea>
         <button id="commentBtn" class="comment-btn"> Comment </button>
         <p class="comment-text">All Comments</p>
         <div id="all-post-comments"></div>
     </div>
+
     <!-- Include all JS file -->
     <script src="../scripts/post.js"></script>
 

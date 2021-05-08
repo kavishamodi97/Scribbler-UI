@@ -1,6 +1,5 @@
 /* Script For PostList Page*/
 
-
 window.onload = function () {
     var sessionObj = sessionStorage.getItem('postInfo');
     var parseObj = JSON.parse(sessionObj);
@@ -22,5 +21,12 @@ function likePost() {
             `<button type="button" id="likeBtn" class="like-btn" onclick="likePost()"><i class="fa fa-thumbs-up"></i>  Liked</button>` +
             `<p id="like-text">${likeCount} people like this!</p>`;
     }
+}
 
+function postComments() {
+    var postComment = document.getElementById('comment-box').value;
+    if (postComment !== '') {
+        document.getElementById('all-post-comments').innerHTML += `<p class="post-comments">${postComment}</p>`;
+        document.getElementById('comment-box').value = '';
+    }
 }

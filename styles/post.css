@@ -1,245 +1,129 @@
+/* Set Css Styles for Post Page:- e.g:Post Information Section,Edit And Save Section,Like And Comment Section */
 
-/* #container {
-	display: flex;
-	flex-direction: column;
-	justify-content: flex-start;
-	height: 100%;
-	width: 100%;
-}
-
-.header {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	margin: 10px;
-}
-
-.title-container {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-}
-
-.title {
-	font-family: 'Montez', cursive;
-	font-size: xx-large;
-	color: blue;
-	margin-bottom: 0px!important;
-	margin-top: 5px;
-}
-
-.sub-title {
-	margin-top: 0px!important;
-	font-family: 'Ubuntu Mono', monospace;
-	color: black;
-	font-size: 12px;
-}
-
-.button-container {
-	padding: 10px;
-	float: right;
-	text-align: right;
-}
-
-.header-button {
-	background-color: blue;
-	color: white;
-	text-align: center;
-	margin-left: 7px;
-	padding: 8px 8px 8px 8px;
-	border: none;
-	font-size: 14px;
-	width: 90px;
-}
-
-form {
-	display: flex;
-	flex-direction: column;
-}
-
-.modal {
-	margin-top: 2px;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-}
-
-.modal-content {
-	background-color: #fefefe;
-	border: 1px solid #888;
-	width: 40%;
-}
-
-#header-model {
-	margin-bottom: 0px;
-}
-
-.hr-line {
-	margin-top: 0px;
-	margin-bottom: 4px;
-	color: black;
-	border-top: 1px solid black;
-}
-
-.btn-block {
-	margin-top: 1rem;
-}
-
-.form-control {
-	padding-top: 2px;
-	padding-bottom: 2px;
-	margin-top: 3px;
-	margin-bottom: 3px;
-}
-
-.label-text {
-	margin-bottom: 3px;
-	padding-top: 2px;
-	margin-top: 3px;
-	padding-bottom: 2px;
-}
-
-.footer-modal {
-	display: flex;
-	justify-content: center;
-	margin-top: 0px;
-	margin-bottom: 10px;
-	font-weight: bold;
-	font-size: 1rem;
-}
-
-#openSignUp {
-	color: #00008B;
-	font-size: 15px;
-	padding-top: 5px;
-	margin-left: 6px;
-	filter: brightness(200%);
-} */
-
-#postTitle{
+#postTitle {
 	font-family: Arial, Helvetica, sans-serif;
 	text-align: center;
 	font-size: larger;
 	font-weight: bold;
-	color:black;
-	margin: 0px 50px 0px 50px;	
+	color: black;
+	margin: 0px 50px 0px 50px;
 }
 
-#postAuthor{
-	 display: flex;
-    flex-direction: row;
+#postAuthor {
+	display: flex;
+	flex-direction: row;
 	font-size: medium;
 	font-family: Arial, Helvetica, sans-serif;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0px 30px 0px 30px;
+	justify-content: space-between;
+	align-items: center;
+	margin: 0px 30px 0px 30px;
 }
 
-#postDescription{
+#postDescription {
 	font-family: Arial, Helvetica, sans-serif;
 	text-align: justify;
 	font-size: medium;
-    margin: 10px 30px 0px 30px;
+	margin: 10px 30px 0px 30px;
 }
 
-.edit-btn{
-    color:white;
-    width: 80px;
-    height: 40px;
-    border: none;
+.edit-btn {
+	color: white;
+	width: 80px;
+	height: 40px;
+	border: none;
 	font-family: Arial, Helvetica, sans-serif;
-    background-color: #e60073;
-    box-shadow: 0px 5px  12px -4px #e60073;
-    cursor: pointer;
-    text-align: center;
+	background-color: #e60073;
+	box-shadow: 0px 5px 12px -4px #e60073;
+	cursor: pointer;
+	text-align: center;
 }
 
-#like-container{
- margin: 15px 30px 0px 30px;
+#like-container {
+	margin: 15px 30px 0px 30px;
 }
 
-.like-btn{
-    color:white;
-    width: 80px;
-    height: 40px;
-    border: none;
+.like-btn {
+	color: white;
+	width: 80px;
+	height: 40px;
+	border: none;
 	font-family: Arial, Helvetica, sans-serif;
-    background-color: #e60073;
-    box-shadow: 0px 5px  12px -4px #e60073;
-    cursor: pointer;
-    text-align: center;
-	font-size: small;	
+	background-color: #e60073;
+	box-shadow: 0px 5px 12px -4px #e60073;
+	cursor: pointer;
+	text-align: center;
+	font-size: small;
 }
 
-#like-text{
-font-family: Arial, Helvetica, sans-serif;
-margin-top: 10px;
-font-size: smaller;
+#like-text {
+	font-family: Arial, Helvetica, sans-serif;
+	margin-top: 10px;
+	font-size: smaller;
 }
 
-#comment-container{
- margin: 15px 30px 0px 30px;;	
+#comment-container {
+	margin: 15px 30px 0px 30px;
+	;
 }
 
-#comment-box{
+#comment-box {
 	height: 100px;
-    width:70%;
-    background-color: white;
-    border-style: solid;
-    border-width: 1px;
-    display: flex;
-    flex-direction: row;
-	font-family: Arial, Helvetica, sans-serif;	
-}
-
-.comment-btn{
-    color:white;
-    width: 80px;
-    height: 40px;
-    border: none;
+	width: 70%;
+	background-color: white;
+	border-style: solid;
+	border-width: 1px;
+	display: flex;
+	flex-direction: row;
 	font-family: Arial, Helvetica, sans-serif;
-    background-color: #e60073;
-    box-shadow: 0px 5px  12px -4px #e60073;
-    cursor: pointer;
-    text-align: center;	
-	margin-top: 20px;	
-	font-size: small;	
 }
 
-#comment-text{
-font-family: Arial, Helvetica, sans-serif;
-margin-top: 10px;
-font-size: smaller;
-font-weight: bold;	
+.comment-btn {
+	color: white;
+	width: 80px;
+	height: 40px;
+	border: none;
+	font-family: Arial, Helvetica, sans-serif;
+	background-color: #e60073;
+	box-shadow: 0px 5px 12px -4px #e60073;
+	cursor: pointer;
+	text-align: center;
+	margin-top: 20px;
+	font-size: small;
 }
 
-#all-post-comments{
-    display: flex;
-    flex-direction: column-reverse;
-    background-color: lightgrey;
-    width: 70%;
-    height: 100%;
+#comment-text {
+	font-family: Arial, Helvetica, sans-serif;
+	margin-top: 10px;
+	font-size: smaller;
+	font-weight: bold;
 }
 
-.post-comments{
+#all-post-comments {
+	display: flex;
+	flex-direction: column-reverse;
+	background-color: lightgrey;
+	width: 70%;
+	height: 100%;
+}
+
+.post-comments {
 	margin: 10px;
-    height: 40px;
-    padding-top: 8px;
+	height: 40px;
+	padding-top: 8px;
 	padding-left: 10px;
 	text-align: left;
-    background-color: white;
+	background-color: white;
 }
 
-.save-btn{
-    color:white;
-    width: 80px;
-    height: 40px;
-    border: none;
+.save-btn {
+	color: white;
+	width: 80px;
+	height: 40px;
+	border: none;
 	font-family: Arial, Helvetica, sans-serif;
-    background-color: #e60073;
-    box-shadow: 0px 5px  12px -4px #e60073;
-    cursor: pointer;
-    text-align: center;
-	margin-top: 5px;	
+	background-color: #e60073;
+	box-shadow: 0px 5px 12px -4px #e60073;
+	cursor: pointer;
+	text-align: center;
+	margin-top: 5px;
 }
